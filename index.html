@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer"/>
+    <meta name="description" content="CSI-VIT is the Vidyalankar Institute of Technology Chapter of CSI Mumbai.
+                                      Computer Society of India is the first and largest body of computer professionals in India.
+                                      Our goal is to cover topics that are not present in the course curriculum for engineering.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/csivit.jpeg">
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@900&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+    font-family: sf;
+    src: url("AvantGardeBookBT.ttf");
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/7c64fa9aba.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>CSI VIT Homepage</title>
+</head>
+
+<body>
+   <section style="width: 100%; height:100vh;">
+    <video autoplay muted loop id="myVideo">
+        <source src="img/back.mp4" type="video/mp4">
+    </video>
+    <nav class="nav" style="z-index: 10000;">
+        <div class="container">
+            <div id="mainListDiv" class="main_list" >
+                <ul class="navlinks" style="overflow-y: hidden;" >         
+                    <li><a href=".\" style="color:#00fff3">Home</a></li>
+                    <li><a href="events/events.html">Events</a></li>
+                    <li><a href="blogs/blogs.html">Blogs</a></li>
+                    <li><a href="leaderboard/leaderboard.html">LeaderBoard</a></li>
+                    <li><a href="teams/teams.html">Team</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="hero" style="z-index: 10;">
+        <h1 class="typing-demo">CSI-VIT</h1>
+        <h3>COMPUTER SOCIETY OF INDIA</h3>
+        <div class="icons">
+            <a href="https://www.instagram.com/csi_vit/" target="_blank" id="insta"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCwezAg7cyDhER2_2pJeK0yQ" target="_blank" id="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/csi-vit/" target="_blank" id="linked"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://discord.gg/nDJ6YRzx" target="_blank" id="discord"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+    <div class="img">
+        <style>
+            body {
+              background-image:linear-gradient(to bottom, rgba(36, 36, 37, 0.52), rgba(33, 29, 32, 0.73)), url('team.jpg');
+              background-repeat: no-repeat;
+              background-attachment: scroll;
+              background-size: 100% 100%;
+            }
+            </style>
+    </div>
+   </section>
+ 
+   <section class="about">
+    <h1>ABOUT US</h1>
+    <div class="grid">
+        <div class="one">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9553570768953!2d72.86824521542161!3d19.021688758619156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf39327f2915%3A0xb3cac731052aa3c9!2sVidyalankar+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1535438281512"  style="border: none" allowfullscreen></iframe>
+        </div>
+        <div class="two">
+            <p style="font-family: sf;">
+                The Computer Society Of India is a non-profit professional body that meets to 
+                exchange views and information to learn and share ideas.
+                Being a national level committee, we work together to discuss technology with likeminded
+                prople. CSI is known for conducting a pleothra of events ranging from seminars, workshops, games 
+                and intercations with proffesionals from industry. These events aim to create a conductive enviorment 
+                for geeks and computer entusiasts by hosting events and other fun activitesto promote
+                learning and contribute to real life skills of attendes. CSI aims to infuse education with fun to 
+                bring the process of learning to a culmination and to light all bdding engineers with a passion to push their skills
+                beyond limits.
+                <br>
+                <br>
+                <a href="mailto:csi.vidyalankar@gmail.com"><i class="far fa-envelope"></i> csi.vidyalankar@gmail.com</a>
+            </p>
+        </div>
+    </div>
+   </section>
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="main1.js"></script>
+          <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+</body>
+</html>

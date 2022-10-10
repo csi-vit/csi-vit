@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="../img/csivit.jpeg" >
+    <style>
+        @font-face {
+    font-family: sf;
+    src: url("AvantGardeBookBT.ttf");
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/7c64fa9aba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../events/events.css">
+    <link rel="stylesheet" href="./blogs.css">
+    <title>CSI-VIT BLOGS</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="nav">
+            <div class="container">
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="#"  style="color:#00fff3">Blogs</a></li>
+                        <li><a href="../teams/teams.html">Teams</a></li>
+                        <li><a href="../leaderboard/leaderboard.html">LeaderBoard</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        <select class="navi relative left-10 top-3 p-2" id="dropDown">
+              <option value="technology">Technology</option> 
+              <option value="health">Health</option>
+              <option value="business">Business</option>
+              <option value="sports">Sports</option>
+              <option value="science">Science</option>
+        </select> 
+        <h1 class="heading">Blogs</h1>
+            <div class="cont w-full">
+                
+            </div>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../main1.js"></script>
+    ,<script src="./blogs.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>

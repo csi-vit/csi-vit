@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="icon" href="../img/csivit.jpeg" >
+    <title>LeaderBoard</title>
+</head>
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    
+    <nav class="nav">
+        <div class="container">
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../events/events.html">Events</a></li>
+                  <li><a href="../blogs/blogs.html">Blogs</a></li>
+                  <li><a href="../teams/teams.html">Teams</a></li>
+                  <li><a href="#"  style="color:#00fff3">LeaderBoard</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <h1 class="heading">LEADERBOARD</h1>
+
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+              <th>Time</th>
+              <th>Memory</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="tbl-content">
+           <p id="showData"></p>
+      </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../main1.js"></script>
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+  </script>
+  <script>
+    
+        var scores = [
+            {
+                  "rank": 1,
+                  "name": "Anuj bhor",
+                  "score": 110,
+                  "time": 0.0,
+                  "memory": 5.384
+            },
+            {
+                  "rank": 2,
+                  "name": "Harshal Padthare",
+                  "score": 100,
+                  "time": 0.0,
+                  "memory": 5.384
+            },
+            {
+                  "rank": 3,
+                  "name": "Abhijit Darade",
+                  "score": 97,
+                  "time": 0.0,
+                  "memory": 5.384
+            },
+            {
+                  "rank": 4,
+                  "name": "Alok Tripathi",
+                  "score": 74,
+                  "time": 0.11,
+                  "memory": 39.748
+            },
+            {
+                  "rank": 5,
+                  "name": "Aayush Pradhan",
+                  "score": 65,
+                  "time": 0.02,
+                  "memory": 17.968
+            },
+            {
+                  "rank": 6,
+                  "name": "Sameep",
+                  "score": 46,
+                  "time": 0.00,
+                  "memory": 5.392
+            },
+            {
+                  "rank": 7,
+                  "name": "Sumant Sabat",
+                  "score": 40,
+                  "time": 0.0,
+                  "memory": 5.464
+            },
+            {
+                  "rank": 7,
+                  "name": "Darshan Mahankar",
+                  "score": 40,
+                  "time": 0.0,
+                  "memory": 0.0
+            },
+            {
+                  "rank": 7,
+                  "name": "Nandini Gore",
+                  "score": 40,
+                  "time": 0.0,
+                  "memory": 0.0
+            },
+            {
+                  "rank": 8,
+                  "name": "Mohit Sharma",
+                  "score": 27,
+                  "time": 0.0,
+                  "memory": 9.424
+            },
+            {
+                  "rank": 9,
+                  "name": "Ayush Tripathi",
+                  "score": 25,
+                  "time": 0.11,
+                  "memory": 2184.192
+            },
+            {
+                  "rank": 10,
+                  "name": "Nikhil Shikare",
+                  "score": 15,
+                  "time": 0.8,
+                  "memory": 96.268
+            },
+            {
+                  "rank": 10,
+                  "name": "Rohan Hazari",
+                  "score": 15,
+                  "time": 0.8,
+                  "memory": 114.242
+            },
+            {
+                  "rank": 11,
+                  "name": "Yash Khot",
+                  "score": 10,
+                  "time": 0.0,
+                  "memory": 0.0
+            },
+             {
+                  "rank": 11,
+                  "name": "Mohammed Bazil",
+                  "score": 10,
+                  "time": 0.0,
+                  "memory": 0.0
+            },
+            
+           
+            {
+                  "rank": 12,
+                  "name": "Parth Thakur",
+                  "score": 0,
+                  "time": 0.0,
+                  "memory": 0.0
+            },
+            {
+                  "rank": 12,
+                  "name": "Devika Ipakalaya",
+                  "score": 0,
+                  "time": 0.0,
+                  "memory": 0.0
+            }
+      ]
+
+        // EXTRACT VALUE FOR HTML HEADER. 
+        // ('Book ID', 'Book Name', 'Category' and 'Price')
+        var col = [];
+        for (var i = 0; i < scores.length; i++) {
+            for (var key in scores[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < scores.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = scores[i][col[j]];
+            }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+    
+</script>
+
+</body>
+</html

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="events.css">
+    <link rel="icon" href="../img/csivit.jpeg" >
+    <title>Events</title>
+</head>
+<body>
+    
+    <div class="main">
+    <nav class="nav">
+        <div class="container">
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#" style="color:#00fff3">Events</a></li>
+                    <li><a href="../blogs/blogs.html">Blogs</a></li>
+                    <li><a href="../teams/teams.html">Teams</a></li>
+                    <li><a href="../leaderboard/leaderboard.html">LeaderBoard</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <h1 class="heading">EVENTS</h1>
+    <div class="events">
+        
+        
+        
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <img style="height: 100%;" src="../img/e7.jpeg" alt="">
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+    
+                    </div>
+                    <h6 style="font-weight: bold;">Registration Open</h6>
+                    <h2  class="4">CodeAstra</h2>
+                    <h3 class="4">Date: 22th Jan 2022</h3>
+                    <h3 class="4">Time: 11:00 AM onwards</h3>
+                    <h3 class="4" style="display: none;">None</h3>
+                    <br>
+                    <!--<button class="btn" style="background-color: black; cursor:pointer; font-size:20px;">See Scores</button>-->
+                    <a href="https://tinyurl.com/59e53cwm" target="_blank" style="color: aliceblue; text-decoration: none;"><button class="btn" style=" cursor:pointer; color: aliceblue;">Register</button></a>
+                </div>
+            </div>
+        </div>  
+      
+        
+        
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <img style="height: 100%;" src="../img/hackofest.gif" alt="">
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+    
+                    </div>
+                    <h6 style="font-weight: bold;">Finished</h6>
+                    <h2  class="3">Did You Git It?</h2>
+                    <h3 class="3">Date: 7th Oct 2021</h3>
+                    <h3 class="3">Time: 7 PM Onwards</h3>
+                    <h3 class="3" style="display: none;">https://www.youtube.com/embed/ohzsC37bjCw</h3>
+                    <br>
+                    <button class="btn" style="background-color: black; cursor:pointer; font-size:20px;" onclick="openModal(3)">Watch Here</button>
+                  <a href="https://forms.gle/wssQio6wmNUDnP5b6" target="_blank" style="color: aliceblue; text-decoration: none;"><button class="btn" style=" cursor:pointer; color: aliceblue;">Register</button></a>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <img style="height: 100%;" src="../img/e2.png" alt="">
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+    
+                    </div>
+                    <h6 style="font-weight: bold;">Finished</h6>
+                    <h2  class="2">Delving Into Data Science</h2>
+                    <h3 class="2">Date: 25th Sept 2021</h3>
+                    <h3 class="2">Time: 11 AM Onwards</h3>
+                    <h3 class="2" style="display: none;">https://www.youtube.com/embed/272N6YV1am8</h3>
+                    <br>
+                    <button class="btn" style="background-color: black; cursor:pointer; font-size:20px;" onclick="openModal(2)">Watch Here</button>
+                    <button class="btn" style=" cursor:pointer; color: aliceblue;"><a href="https://forms.gle/bf9SnsKyBzKJFqzq8" target="_blank" style="color: aliceblue; text-decoration: none;">Register</a></button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="courses-container">
+            <div class="course">
+                <div class="course-preview">
+                    <img style="height: 100%;" src="../img/e1.jpeg" alt="">
+                </div>
+                <div class="course-info">
+                    <div class="progress-container">
+    
+                    </div>
+                    <h6 style="font-weight: bold;">Finished</h6>
+                    <h2  class="1">Drafting Research Papers: Tips and Tricks</h2>
+                    <h3 class="1">Date: 8th Sept 2021</h3>
+                    <h3 class="1">Time: 5 PM Onwards</h3>
+                    <h3 class="1" style="display: none;">https://www.youtube.com/embed/kPH8Yxig4Eo</h3>
+                    <br>
+                    <button class="btn" style="background-color: black; cursor:pointer; font-size:20px;" onclick="openModal(1)">Watch Here</button>
+                    <!--<button class="btn" style=" cursor:pointer; color: aliceblue;"><a href="https://forms.gle/qgPNNerTbJiNKWd38" target="_blank" style="color: aliceblue; text-decoration: none;">Register</a></button>-->
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+</div>
+    <!-- events modals -->
+    <div id="modal" class="mod">
+        <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+        <button id="modalclose" onclick="closeModal()">+</button>
+        <div class="eventName" style="font-family:'Times New Roman', Times, serif; color: aliceblue; text-decoration: none; font-weight: 700;"></div>
+        <div class="eventdate" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></div>
+        <div class="eventtime" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></div>
+        <div class="grid-0">
+            <div id="desc" style="text-align: center; margin-top: 1rem; ">
+                <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </iframe>
+            </div>
+            
+        </div>
+        <!-- <iframe width="900" height="506" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./events.js"></script>
+</body>
+</html>

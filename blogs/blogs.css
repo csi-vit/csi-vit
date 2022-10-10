@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+} 
+.cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 2vw 0 2vw;
+}
+.navi li a {
+    text-decoration: none;
+    color: #2d2f31;
+  }
+  
+.navi {
+    width: 250px;
+    background: #d9d9d9;
+    z-index: 10;
+    outline: none;
+  }
+  
+@media only screen and (max-width: 900px) {
+    .cont{
+        width: 100%;
+        display: flow-root;
+        padding: 2vw;
+    }
+}
